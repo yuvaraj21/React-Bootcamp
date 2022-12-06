@@ -5,22 +5,22 @@ function App() {
     {
       name: 'Food1',
       price: 60.0,
-      date: 'jan 24 2021',
+      date: new Date(2021, 1, 24),
     },
     {
       name: 'Food2',
-      price: 60.0,
-      date: 'jan 24 2021',
+      price: 65.0,
+      date: new Date(2021, 3, 8),
     },
     {
       name: 'Food3',
-      price: 60.0,
-      date: 'jan 24 2021',
+      price: 50.0,
+      date: new Date(2021, 6, 28),
     },
     {
       name: 'Food4',
-      price: 60.0,
-      date: 'jan 24 2021',
+      price: 25.0,
+      date: new Date(2021, 8, 4),
     },
   ];
 
