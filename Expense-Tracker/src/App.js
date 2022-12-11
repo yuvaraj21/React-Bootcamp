@@ -1,4 +1,4 @@
-import Expenses from './component/Expenses';
+import Expenses from './component/Expenses/Expenses';
 
 function App() {
   const expenses = [
@@ -23,6 +23,7 @@ function App() {
       date: new Date(2021, 8, 4),
     },
   ];
+
   return (
     <div>
       <h2>Expense Tracker React App</h2>
