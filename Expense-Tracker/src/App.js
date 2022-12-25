@@ -1,8 +1,9 @@
+import { useState } from 'react';
 import Expenses from './component/Expenses/Expenses';
 import NewExpense from './component/NewExpense/NewExpense';
 
 function App() {
-  const expenses = [
+  let expenses = [
     {
       name: 'Food1',
       price: 60.0,
@@ -25,10 +26,15 @@ function App() {
     },
   ];
 
+  const addExpenseHandler = (expense) => {
+    console.log('In app.js');
+    console.log(expense);
+  };
+
   return (
     <div>
       <h2>Expense Tracker React App</h2>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses expenses={expenses} />
     </div>
   );
