@@ -9,8 +9,8 @@ const ExpenseForm = (props) => {
   const submitExpense = (event) => {
     event.preventDefault();
     const expenseData = {
-      title: title,
-      amount: amount,
+      name: title,
+      price: amount,
       date: new Date(date),
     };
     props.onSaveExpenseData(expenseData);
@@ -29,6 +29,7 @@ const ExpenseForm = (props) => {
             onChange={(e) => {
               setTitle(e.target.value);
             }}
+            required
           />
         </div>
 
@@ -40,6 +41,7 @@ const ExpenseForm = (props) => {
             onChange={(e) => {
               setAmount(e.target.value);
             }}
+            required
           />
         </div>
 
@@ -51,6 +53,7 @@ const ExpenseForm = (props) => {
             onChange={(e) => {
               setDate(e.target.value);
             }}
+            required
           />
         </div>
       </div>
