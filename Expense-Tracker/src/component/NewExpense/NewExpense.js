@@ -10,6 +10,7 @@ const NewExpense = (props) => {
     };
     console.log(expenseData);
     props.onAddExpense(expenseData);
+    setFormVisibility(false);
   };
 
   const [formVisibility, setFormVisibility] = useState(false);

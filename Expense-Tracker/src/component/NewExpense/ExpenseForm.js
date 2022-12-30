@@ -59,6 +59,7 @@ const ExpenseForm = (props) => {
       </div>
       <div className="new-expense__actions">
         <button
+          className="btn-cancel"
           onClick={(e) => {
             props.onChangeVisibility(false);
           }}
